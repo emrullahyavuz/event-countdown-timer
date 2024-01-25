@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etkinliğe Ne Kadar Zaman Var ?</title>
+</head>
+<body>
+
+
+
+    <div class="cardContainer">
+        <div class="cardContent">
+            <h1 class="cardTitle">Etkinliğe Ne Kadar Zaman Var?</h1>
+            <form class="cardInput">
+                <label>Tarih Seçiniz:</label>
+                <input type="date" name="date" id="date-picker">
+                <div class="cardButtonDiv">
+                    <button id="cardBtn">Tarih Hesapla</button>
+                </div>
+            </form>
+           
+        </div>
+
+        <div class="dateContainer" hidden>
+            <h1>Kalan Süre</h1>
+            <ul class="timeList">
+                <li><span></span>Gün</li>
+                <li><span></span>Saat</li>
+                <li><span></span>Dakika</li>
+                <li><span></span>Saniye</li>
+            </ul>
+            <div class="cardButtonDiv">
+                <button class="resetBtn">Sıfırla</button>
+            </div>
+        </div>
+
+        <div class="timeContainer" hidden>
+            <h1>Zaman Geldi!</h1>
+            <div class="cardButtonDiv">
+                <button class="againCalculateBtn">Yeniden Hesapla</button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
